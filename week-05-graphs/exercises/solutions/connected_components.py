@@ -25,3 +25,6 @@ def count_components(n, edges):
             count += 1
             dfs(i)
     return count
+
+if __name__ == "__main__":
+    print(count_components(5, [[0,1],[1,2],[3,4]]))

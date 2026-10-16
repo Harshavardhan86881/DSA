@@ -16,3 +16,7 @@ def has_path(graph, src, dst):
         return False
 
     return dfs(src)
+
+if __name__ == "__main__":
+    graph = {0:[1],1:[2],2:[]}
+    print(has_path(graph,0,2))

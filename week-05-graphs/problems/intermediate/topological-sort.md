@@ -18,7 +18,7 @@ Reasonable graph sizes.
 ## 3. Examples
 
 ```text
-See solution file.
+[0, 1, 2, 3]
 ```
 
 ## 4. Hints
