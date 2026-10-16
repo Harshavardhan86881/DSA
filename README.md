@@ -6,7 +6,7 @@ lessons, runnable examples, exercises, problems, revision material and assessmen
 
 **Current status:** the full 7-week structure and the shared documentation are in place.
 Week 1 all 7 days of lesson content have been generated (problem solving, Big-O, arrays, strings, hashing, prefix sums, revision).
-Weeks 2–7 are scoped and reserved but intentionally empty.
+Weeks 1–7 content generated.
 
 ## Who this course is for
 
@@ -43,11 +43,11 @@ Keep a mistake notebook from day 1 — the template is at
 | --- | --- | --- | --- |
 | 1 | [week-01-foundations](week-01-foundations/README.md) | Problem solving, Big-O, arrays, strings, hashing, prefix sums | Complete (all 7 days) |
 | 2 | [week-02-two-pointers-sliding-window-binary-search](week-02-two-pointers-sliding-window-binary-search/README.md) | Two pointers, sliding window, binary search, sorting patterns | Complete (all 7 days) |
-| 3 | [week-03-linked-lists-stacks-queues](week-03-linked-lists-stacks-queues/README.md) | Linked lists, stacks, queues and their applications | Scoped, lessons not generated |
-| 4 | [week-04-recursion-trees-heaps](week-04-recursion-trees-heaps/README.md) | Recursion, trees, binary search trees, heaps | Scoped, lessons not generated |
-| 5 | [week-05-graphs](week-05-graphs/README.md) | Graph representation, BFS, DFS, basic graph problems | Scoped, lessons not generated |
-| 6 | [week-06-backtracking-greedy-dynamic-programming](week-06-backtracking-greedy-dynamic-programming/README.md) | Backtracking, greedy, dynamic programming fundamentals | Scoped, lessons not generated |
-| 7 | [week-07-revision-mock-interviews](week-07-revision-mock-interviews/README.md) | Revision, mixed practice, mock interviews, final assessment | Scoped, lessons not generated |
+| 3 | [week-03-linked-lists-stacks-queues](week-03-linked-lists-stacks-queues/README.md) | Linked lists, stacks, queues and their applications | Complete (all 7 days) |
+| 4 | [week-04-recursion-trees-heaps](week-04-recursion-trees-heaps/README.md) | Recursion, trees, binary search trees, heaps | Complete (all 7 days) |
+| 5 | [week-05-graphs](week-05-graphs/README.md) | Graph representation, BFS, DFS, basic graph problems | Complete (all 7 days) |
+| 6 | [week-06-backtracking-greedy-dynamic-programming](week-06-backtracking-greedy-dynamic-programming/README.md) | Backtracking, greedy, dynamic programming fundamentals | Complete (all 7 days) |
+| 7 | [week-07-revision-mock-interviews](week-07-revision-mock-interviews/README.md) | Revision, mixed practice, mock interviews, final assessment | Complete (all 7 days) |
 
 ## What lives where
 

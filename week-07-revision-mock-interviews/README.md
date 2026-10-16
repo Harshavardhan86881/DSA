@@ -1,6 +1,6 @@
 # Week 7 — Revision, mixed practice, mock interviews, final assessment
 
-**Status: structure ready; lesson content NOT generated.**
+**Status: all 7 days generated (revision, mocks, final assessment). Week 7 content complete.**
 Scope is fixed here; the revision packs, mocks and final assessment are generated after Weeks 1–6
 exist, because they must draw on that material.
 

@@ -1,6 +1,6 @@
 # Week 4 — Recursion, trees, heaps
 
-**Status: structure ready; lesson content NOT generated.**
+**Status: all 7 days generated (recursion, trees, heaps). Week 4 content complete.**
 Scope is fixed here; lessons are generated week by week after Week 1 is complete.
 
 ## 1. Learning objectives

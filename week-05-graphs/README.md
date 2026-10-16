@@ -1,6 +1,6 @@
 # Week 5 — Graphs
 
-**Status: structure ready; lesson content NOT generated.**
+**Status: all 7 days generated (graphs). Week 5 content complete.**
 Scope is fixed here; lessons are generated week by week after Week 1 is complete.
 
 ## 1. Learning objectives

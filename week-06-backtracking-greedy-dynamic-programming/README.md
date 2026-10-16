@@ -1,6 +1,6 @@
 # Week 6 — Backtracking, greedy, dynamic programming
 
-**Status: structure ready; lesson content NOT generated.**
+**Status: all 7 days generated (backtracking, greedy, DP). Week 6 content complete.**
 Scope is fixed here; lessons are generated week by week after Week 1 is complete.
 
 ## 1. Learning objectives

@@ -1,6 +1,6 @@
 # Week 3 — Linked lists, stacks, queues
 
-**Status: structure ready; lesson content NOT generated.**
+**Status: all 7 days generated (linked lists, stacks, queues). Week 3 content complete.**
 Scope is fixed here; lessons are generated week by week after Week 1 is complete.
 
 ## 1. Learning objectives
