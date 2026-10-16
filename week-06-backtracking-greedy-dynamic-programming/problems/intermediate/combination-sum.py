@@ -1,4 +1,7 @@
-"""Solution: Combination Sum. O(n^(target/min)) time."""
+"""Solution: Combination Sum. Exponential worst case; pruning improves practice.
+
+Each candidate may be reused. Candidates are assumed positive.
+"""
 
 
 def combination_sum(candidates, target):
@@ -17,3 +20,7 @@ def combination_sum(candidates, target):
 
     backtrack(0, [], target)
     return result
+
+
+if __name__ == "__main__":
+    print(combination_sum([2, 3, 6, 7], 7))

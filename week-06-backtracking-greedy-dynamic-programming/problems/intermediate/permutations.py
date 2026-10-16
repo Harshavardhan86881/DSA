@@ -1,4 +1,7 @@
-"""Solution: Permutations. O(n * n!) time, O(n) space."""
+"""Solution: Permutations. O(n * n!) time, O(n) auxiliary space.
+
+Position-based permutations: duplicate input values may produce duplicate permutations.
+"""
 
 
 def permute(nums):
@@ -19,3 +22,7 @@ def permute(nums):
 
     backtrack([], [False] * len(nums))
     return result
+
+
+if __name__ == "__main__":
+    print(permute([1, 2, 3]))

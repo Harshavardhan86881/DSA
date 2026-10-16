@@ -3,68 +3,88 @@
 | | |
 | --- | --- |
 | **Difficulty** | intermediate |
-| **Topics** | backtracking |
+| **Topics** | backtracking, pruning |
 | **Target time** | 25 minutes |
 | **Solution file** | [combination-sum.py](combination-sum.py) |
 
 ## 1. Problem statement
 
-Find combinations summing to target.
+Given an array of positive integers `candidates` and a target integer, return all unique combinations of candidates that sum to target. The same candidate may be used unlimited times. Combinations are compared as multisets; order within a combination does not matter.
+
+Function contract: `combination_sum(candidates: list[int], target: int) -> list[list[int]]`.
 
 ## 2. Constraints
 
-Reasonable input sizes.
+- `1 <= len(candidates) <= 30`
+- `1 <= candidates[i] <= 200`
+- `1 <= target <= 500`
+- Candidates may contain duplicates; duplicate candidates may lead to duplicate combinations unless deduplicated.
 
 ## 3. Examples
 
-```text
-See solution file.
-```
+Input: `candidates = [2,3,6,7], target = 7`
+Output: `[[2,2,3],[7]]`.
+
+Input: `candidates = [2], target = 1`
+Output: `[]`.
 
 ## 4. Hints
 
 <details><summary>Hint 1</summary>
-Use recursion/DP as appropriate.
+Use backtracking with a start index to avoid duplicate orderings.
 </details>
 
-## 5. Optimised approach
+<details><summary>Hint 2</summary>
+Pass `i`, not `i + 1`, when reusing a candidate.
+</details>
 
-```python
-"""Solution: Combination Sum. O(n^(target/min)) time."""
+<details><summary>Hint 3</summary>
+Prune when remaining becomes negative.
+</details>
 
+## 5. Brute-force approach
 
-def combination_sum(candidates, target):
-    result = []
+Generate all sequences of candidates and keep those summing to target. This creates duplicate orderings and exponential blowup.
 
-    def backtrack(start, path, remaining):
-        if remaining == 0:
-            result.append(path[:])
-            return
-        if remaining < 0:
-            return
-        for i in range(start, len(candidates)):
-            path.append(candidates[i])
-            backtrack(i, path, remaining - candidates[i])
-            path.pop()
+## 6. Optimised approach
 
-    backtrack(0, [], target)
-    return result
-```
+Sort if needed, then backtrack by choosing candidates from `start` onward. Reuse is allowed by recursing with the same index. Prune negative remainders.
 
-## 6. Complexity analysis
+Important code lines:
 
-See solution docstring.
+- `if remaining == 0`: record a copy.
+- `if remaining < 0`: prune.
+- `for i in range(start, len(candidates))`: avoid duplicate orderings.
+- `backtrack(i, ...)`: allow reuse.
+- `path.pop()`: undo.
 
-## 7. Edge cases and tests
+## 7. Complexity analysis
 
-See `../../exercises/test-cases/`.
+- Worst case: exponential in target and candidate size.
+- Pruning improves practical runtime but does not guarantee a better worst-case asymptotic bound.
 
-## 8. Follow-up questions
+## 8. Edge cases and tests
 
-1. Can you reduce space?
-2. What is the time complexity?
-3. How to handle duplicates?
+- Target 0 returns `[[]]` under this implementation.
+- No solution returns `[]`.
+- Candidate larger than target.
+- Duplicate candidates.
 
-## 9. Related problems
+## 9. Common mistakes
+
+- Passing `i + 1` and accidentally disallowing reuse.
+- Forgetting to copy path.
+- Pruning a valid branch.
+
+## 10. Follow-up questions
+
+1. How would you handle each candidate used at most once?
+2. How would you remove duplicate combinations from duplicate candidates?
+3. How would you count solutions without storing them?
+
+## 11. Related problems
 
 - `../../exercises/starter-code/combination_sum.py` — starter code.
+- `../../exercises/solutions/combination_sum.py` — solution.
+- `../../exercises/test-cases/test_combination_sum.py` — tests.
+- `../../lessons/backtracking/backtracking.md` — lesson.

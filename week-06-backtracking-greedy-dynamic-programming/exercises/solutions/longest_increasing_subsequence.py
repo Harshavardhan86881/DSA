@@ -10,3 +10,7 @@ def length_of_lis(nums):
             if nums[j] < nums[i]:
                 dp[i] = max(dp[i], dp[j] + 1)
     return max(dp)
+
+
+if __name__ == "__main__":
+    print(length_of_lis([10, 9, 2, 5, 3, 7, 101, 18]))

@@ -11,3 +11,12 @@ def test_empty():
 
 def test_single():
     assert length_of_lis([1]) == 1
+
+def test_decreasing():
+    assert length_of_lis([5,4,3,2,1]) == 1
+
+def test_duplicates():
+    assert length_of_lis([1,1,1]) == 1
+
+def test_increasing():
+    assert length_of_lis([1,2,3,4]) == 4

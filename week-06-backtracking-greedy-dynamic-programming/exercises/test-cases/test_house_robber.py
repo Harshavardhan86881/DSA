@@ -11,3 +11,9 @@ def test_empty():
 
 def test_single():
     assert rob([5]) == 5
+
+def test_two():
+    assert rob([2,7]) == 7
+
+def test_all_zeros():
+    assert rob([0,0,0]) == 0

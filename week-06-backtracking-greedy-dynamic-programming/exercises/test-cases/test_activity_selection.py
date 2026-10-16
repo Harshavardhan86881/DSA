@@ -8,3 +8,12 @@ def test_basic():
 
 def test_empty():
     assert max_activities([]) == 0
+
+def test_single():
+    assert max_activities([(1,2)]) == 1
+
+def test_back_to_back():
+    assert max_activities([(1,2),(2,3)]) == 2
+
+def test_equal_endpoints():
+    assert max_activities([(1,2),(1,2)]) == 1

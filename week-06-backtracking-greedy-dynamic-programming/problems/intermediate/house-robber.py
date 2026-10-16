@@ -7,3 +7,7 @@ def rob(nums):
         cur = max(prev1, prev2 + num)
         prev2, prev1 = prev1, cur
     return prev1
+
+
+if __name__ == "__main__":
+    print(rob([1, 2, 3, 1]))

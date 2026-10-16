@@ -9,3 +9,9 @@ def test_basic():
 def test_small():
     assert climb_stairs(1) == 1
     assert climb_stairs(2) == 2
+
+def test_zero():
+    assert climb_stairs(0) == 1
+
+def test_larger():
+    assert climb_stairs(10) == 89

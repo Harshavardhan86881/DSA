@@ -1,77 +1,67 @@
-# Week 6 — Backtracking, greedy, dynamic programming
+# Week 6 — Backtracking, Greedy, Dynamic Programming
 
-**Status: all 7 days generated (backtracking, greedy, DP). Week 6 content complete.**
-Scope is fixed here; lessons are generated week by week after Week 1 is complete.
+**Status: deep teaching content complete for all required Week 6 topics.**
 
 ## 1. Learning objectives
 
 By the end of Week 6 you can:
 
-1. Write a backtracking solution with the three-part shape: choose, explore, un-choose, and add
-   pruning when the search space is too large.
-2. Generate subsets, permutations and combinations systematically, and state how many there are.
-3. Decide whether a greedy strategy is valid for a problem, and give a counterexample when it is not.
-4. Recognise overlapping subproblems and write both a memoised recursion and an iterative
-   bottom-up version of the same solution.
-5. Derive a DP state, transition and base case for 1-D problems, and state the complexity in terms
-   of the state count and transition cost.
-6. Compare brute force, greedy and DP on the same problem and justify the chosen approach.
-7. Explain a DP solution aloud by stating the state meaning before writing any code.
+1. Write backtracking with choose, explore, un-choose, and safe pruning.
+2. Generate subsets, permutations, and combinations, and state their counts.
+3. Decide whether a greedy strategy is valid and give a counterexample when it is not.
+4. Recognise overlapping subproblems and write memoised and tabulated versions.
+5. Derive DP state, transition, and base case for 1-D problems.
+6. Compare brute force, greedy, and DP and justify the chosen approach.
+7. Explain a DP solution by stating the state meaning first.
 
 ## 2. Prerequisites
 
-- Weeks 1–5 gates passed, especially recursion (Week 4) and traversal reasoning (Week 5).
-- Comfort with lists of lists and passing/undoing state.
+- Weeks 1–5, especially recursion and graph traversal.
 
-## 3. Planned topics
+## 3. Topics
 
 | # | Topic | Core idea |
 | --- | --- | --- |
-| 1 | Backtracking template | Choose, recurse, undo; explicit "path" and "choices" |
-| 2 | Subsets, permutations, combinations | Decision trees, counting results, duplicate handling |
-| 3 | Pruning | Reject partial solutions early; when pruning changes the complexity |
-| 4 | Greedy algorithms | Local choice, exchange-argument intuition, counterexamples |
-| 5 | Greedy vs DP | Coin change and interval problems as the classic contrast |
-| 6 | Memoisation | Top-down DP: cache on the state, recursion depth, `functools.lru_cache` |
-| 7 | Tabulation | Bottom-up DP: base rows first, filling order, space optimisation |
-| 8 | Classic 1-D DP problems | Climbing stairs, house robber, coin change, longest increasing subsequence (preview) |
+| 1 | Backtracking | Choose, explore, undo |
+| 2 | Subsets, permutations, combinations | Decision trees and counts |
+| 3 | Pruning | Safe early rejection |
+| 4 | Greedy | Local choice and proof |
+| 5 | Memoisation | Top-down DP |
+| 6 | Tabulation | Bottom-up DP |
+| 7 | Classic DP | Climbing stairs, house robber, coin change, LIS |
 
-## 4. Planned deliverables
+## 4. Actual files
 
-| Folder | Planned contents |
+| Area | Files |
 | --- | --- |
-| `lessons/` | Backtracking template, subsets/permutations, pruning, greedy fundamentals, memoisation, tabulation |
-| `examples/` | Runnable decision-tree printer, subset generator, greedy counterexample demo, memoised vs tabulated comparison |
-| `exercises/` | Complete a backtracking template, convert recursion to DP, greedy validity checks, fixtures and solutions |
-| `problems/easy/`, `problems/intermediate/` | Full problems: subsets, permutation generation, combination sum with pruning, activity-selection style greedy, climbing stairs, house robber, coin change, longest increasing subsequence |
-| `interview-prep/` | Questions on state definition, complexity of DP, greedy proof sketches, pruning, recursion limits, with spoken answers and a mock interview |
-| `revision/` | Flashcards on DP state shapes and complexities, active recall, spaced-repetition schedule |
-| `assessments/` | Daily quizzes, weekly assessment, answer key, rubric |
+| Lessons | [lessons/backtracking/backtracking.md](lessons/backtracking/backtracking.md), [lessons/greedy/greedy.md](lessons/greedy/greedy.md), [lessons/dp/dp.md](lessons/dp/dp.md) |
+| Examples | [examples/backtracking/](examples/backtracking/), [examples/greedy/](examples/greedy/), [examples/dp/](examples/dp/) |
+| Starter code | [exercises/starter-code/](exercises/starter-code/) |
+| Solutions | [exercises/solutions/](exercises/solutions/) |
+| Tests | [exercises/test-cases/](exercises/test-cases/) |
+| Problems | [problems/easy/](problems/easy/), [problems/intermediate/](problems/intermediate/) |
+| Day plans | [curriculum/](curriculum/) |
+| Interview prep | [interview-prep/questions.md](interview-prep/questions.md) |
+| Revision | [revision/](revision/) |
+| Assessment | [assessments/week-6-assessment.md](assessments/week-6-assessment.md), [assessments/answer-key.md](assessments/answer-key.md) |
 
-## 5. Internal structure
+## 5. Pattern to problem map
 
-```text
-week-06-backtracking-greedy-dynamic-programming/
-├── README.md
-├── lessons/          (empty — content pending)
-├── examples/         (empty)
-├── exercises/        (empty)
-├── problems/         (empty)
-├── interview-prep/   (empty)
-├── revision/         (empty)
-└── assessments/      (empty)
-```
+| Pattern | Problems |
+| --- | --- |
+| Backtracking | subsets, permutations, combination sum |
+| Greedy | activity selection |
+| DP | climbing stairs, house robber, coin change, longest increasing subsequence |
 
 ## 6. Exit criteria
 
-- [ ] Backtracking solutions always un-choose state before returning.
-- [ ] Every DP solution is preceded by a written state definition and transition.
-- [ ] At least one greedy solution is accompanied by a counterexample for a greedy that fails.
-- [ ] Complexity of every DP solution stated as states × transition cost.
-- [ ] Weekly assessment passed according to its rubric.
+- [ ] Backtracking solutions un-choose before returning.
+- [ ] Every DP solution has a written state definition.
+- [ ] At least one greedy solution has a counterexample.
+- [ ] Complexity stated as states times transition cost.
+- [ ] Weekly assessment passed.
 
 ## 7. Related documents
 
-- [../docs/course-overview.md](../docs/course-overview.md) — sequence and scope.
-- [../docs/complexity-cheatsheet.md](../docs/complexity-cheatsheet.md) — needed for DP complexity statements.
-- [../week-05-graphs/README.md](../week-05-graphs/README.md) — prerequisite week.
+- [../docs/course-overview.md](../docs/course-overview.md)
+- [../week-05-graphs/README.md](../week-05-graphs/README.md)
