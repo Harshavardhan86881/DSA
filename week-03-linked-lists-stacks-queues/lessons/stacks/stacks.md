@@ -2,50 +2,43 @@
 
 | | |
 | --- | --- |
-| **Week** | 3 — Linked lists, stacks, queues |
+| **Week** | 3 |
 | **Topic** | Stacks |
-| **Estimated time** | Concepts 45 min + implementation 45 min |
-| **Prerequisites** | Week 1 arrays |
-| **Deliverable** | `exercises/starter-code/valid_parentheses.py` attempted |
+| **Estimated time** | Concepts 40 min + implementation 40 min |
+| **Prerequisites** | Python lists |
+| **Deliverable** | `valid_parentheses.py` attempted |
 
 ## 1. Learning objectives
 
-After this lesson you can:
+1. Explain LIFO.
+2. Implement push, pop, peek.
+3. Solve balanced parentheses.
+4. Implement Min Stack.
 
-1. Explain LIFO and implement a stack with a Python list.
-2. Solve balanced brackets.
-3. Implement a min-stack.
-4. Use a monotonic stack for next greater element.
+## 2. Concept explanation
 
-## 2. Prerequisites check
+A stack is last-in, first-out (LIFO). Python list append/pop at the end are O(1). Use a list as a stack.
 
-1. Can you use list append/pop? (If no, review lists.)
+## 3. Visual example
 
-## 3. Why this matters
+Push 1,2,3:
 
-Stacks model undo, parsing, DFS, and monotonic problems. They are one of the most common interview structures.
+```text
+[]
+[1]
+[1,2]
+[1,2,3]
+```
 
-## 4. Concept explanation
+Pop:
 
-### 4.1 LIFO
+```text
+[1,2]
+```
 
-Last in, first out. Python list append/pop at the end are O(1).
+## 4. Balanced parentheses
 
-### 4.2 Balanced brackets
-
-Push opens; on a close, the top must match.
-
-### 4.3 Min stack
-
-Keep a parallel stack of minimums.
-
-### 4.4 Monotonic stack
-
-Maintain increasing/decreasing values to answer "next greater/smaller" in O(n).
-
-## 5. Worked examples
-
-### Example 1 — Valid parentheses
+Push opens. On close, top must match.
 
 ```python
 def is_valid(s):
@@ -61,43 +54,119 @@ def is_valid(s):
     return not stack
 ```
 
-### Example 2 — Monotonic stack
+## 5. Min Stack
+
+Track minimum with a parallel stack. On push, push to min stack if value <= current min. On pop, pop min stack if value == current min.
 
 ```python
-def next_greater(nums):
-    result = [-1] * len(nums)
-    stack = []
-    for i, value in enumerate(nums):
-        while stack and nums[stack[-1]] < value:
-            result[stack.pop()] = value
-        stack.append(i)
-    return result
+class MinStack:
+    def __init__(self):
+        self.stack = []
+        self.min_stack = []
+
+    def push(self, val):
+        self.stack.append(val)
+        if not self.min_stack or val <= self.min_stack[-1]:
+            self.min_stack.append(val)
+
+    def pop(self):
+        val = self.stack.pop()
+        if self.min_stack and val == self.min_stack[-1]:
+            self.min_stack.pop()
+
+    def top(self):
+        return self.stack[-1]
+
+    def get_min(self):
+        return self.min_stack[-1]
 ```
 
-## 6. Complexity
+## 6. Dry run: Min Stack with duplicates
+
+Push 5,5,3,3:
+- min_stack: [5,5,3,3]
+Pop one 3:
+- min_stack: [5,5,3]
+get_min: 3. Correct.
+
+## 7. Complexity
 
 | Operation | Time | Space |
 | --- | --- | --- |
-| Push/pop/top | O(1) | O(n) |
+| Push/pop/peek | O(1) | O(n) |
 | Valid parentheses | O(n) | O(n) |
-| Next greater element | O(n) | O(n) |
+| Min Stack | O(1) per op | O(n) |
 
-## 7. Common mistakes
+## 8. Common mistakes
 
-| Mistake | Symptom | Fix |
-| --- | --- | --- |
-| Using list.pop(0) | O(n) | Use end of list |
-| Forgetting empty stack check | Crash | Check before pop |
-| Wrong monotonic direction | Wrong answers | Trace small example |
+- Using `list.pop(0)`.
+- Forgetting empty stack check.
+- Min stack not handling duplicates.
 
-## 8. Practice exercises
+## 9. Practice
 
-1. Valid Parentheses → `exercises/starter-code/valid_parentheses.py`
-2. Min Stack → `exercises/starter-code/min_stack.py`
-3. Next Greater Element → `exercises/starter-code/next_greater_element.py`
+### Guided exercise 1
 
-## 9. Hints
+Trace valid parentheses on `"([)]"`.
 
-<details><summary>Hint 1</summary>
-The stack stores unmatched opens.
-</details>
+### Guided exercise 2
+
+Push 2,1,1 to Min Stack and pop.
+
+### Independent exercise 1
+
+Implement `is_valid`.
+
+### Independent exercise 2
+
+Implement Min Stack.
+
+### Debugging exercise
+
+Fix:
+
+```python
+def bad_min(stack):
+    return min(stack)
+```
+
+Why is it O(n)?
+
+### Prediction exercise
+
+`is_valid("{[()]}")`?
+
+Answer: True.
+
+## 10. Active-recall questions
+
+1. What is LIFO?
+2. Why list end operations O(1)?
+3. How does Min Stack track min?
+4. Why handle duplicates with `<=`?
+5. What is valid parentheses algorithm?
+
+Answers:
+1. Last in first out.
+2. No shifting.
+3. Parallel min stack.
+4. To keep count of duplicate minima.
+5. Stack matching.
+
+## 11. Interview questions
+
+**Q:** How do you get minimum in O(1)?
+**A:** Maintain a parallel stack of minimums.
+
+Follow-up: How to handle duplicates? Use `<=` on push and `==` on pop.
+
+## 12. Spaced-repetition checklist
+
+- Day 1: Draw stack.
+- Day 3: Write Min Stack.
+- Day 7: Explain duplicate handling.
+- Day 14: Compare with heap.
+
+## 13. Explain aloud
+
+"A stack is a pile of plates. You add and remove from the top. Min Stack keeps a second pile of the smallest plates seen."

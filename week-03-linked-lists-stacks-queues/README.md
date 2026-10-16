@@ -1,6 +1,6 @@
 # Week 3 — Linked lists, stacks, queues
 
-**Status: all 7 days generated (linked lists, stacks, queues). Week 3 content complete.**
+**Status: deep teaching content generated for all required Week 3 topics.**
 Scope is fixed here; lessons are generated week by week after Week 1 is complete.
 
 ## 1. Learning objectives
