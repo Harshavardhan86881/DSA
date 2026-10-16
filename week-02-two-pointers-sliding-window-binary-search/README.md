@@ -1,6 +1,6 @@
 # Week 2 — Two pointers, sliding window, binary search, sorting patterns
 
-**Status: structure ready; lesson content NOT generated.**
+**Status: Days 1-2 content generated (two pointers, sliding window); Days 3-7 pending.**
 This week is scoped here so the folder layout and the sequence are fixed. Lessons follow the same
 templates and rules as Week 1 and will be generated week by week.
 
