@@ -66,16 +66,22 @@ Base cases: `dp[0] = 1` (one way to stand at ground), `dp[1] = 1`.
 
 Contract: `n >= 0`. `climb_stairs(0) = 1` by the empty-path convention; negative input is invalid.
 
-Memoization:
+Memoization (validate the public input before entering the cached helper):
 
 ```python
 from functools import lru_cache
 
-@lru_cache(None)
-def climb(n):
-    if n <= 1:
-        return 1
-    return climb(n - 1) + climb(n - 2)
+def climb_stairs_memo(n):
+    if n < 0:
+        raise ValueError("n must be non-negative")
+
+    @lru_cache(None)
+    def ways(i):
+        if i <= 1:
+            return 1
+        return ways(i - 1) + ways(i - 2)
+
+    return ways(n)
 ```
 
 Tabulation:
