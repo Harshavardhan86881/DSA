@@ -4,4 +4,4 @@
 2. Write DFS.
 3. Count components.
 4. Topological sort.
-5. Shortest path BFS.
+5. Explain visited marking.

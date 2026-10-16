@@ -1,5 +1,4 @@
-"""Runnable example: topological sort (Kahn's algorithm)."""
-
+"""Runnable example: topological sort with Kahn's algorithm."""
 
 from collections import deque
 

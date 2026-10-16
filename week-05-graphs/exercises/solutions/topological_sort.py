@@ -22,3 +22,6 @@ def topological_sort(num_nodes, edges):
     if len(order) != num_nodes:
         return None
     return order
+
+if __name__ == "__main__":
+    print(topological_sort(4, [(0,1),(0,2),(1,3),(2,3)]))

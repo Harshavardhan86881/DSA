@@ -11,3 +11,5 @@ Concepts:
 1. BFS vs DFS.
 2. Adjacency list complexity.
 3. Topological sort validity.
+
+Rubric: pass at 70%.

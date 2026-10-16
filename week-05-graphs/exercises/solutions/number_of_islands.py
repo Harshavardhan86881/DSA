@@ -22,3 +22,7 @@ def num_islands(grid):
                 count += 1
                 dfs(r, c)
     return count
+
+if __name__ == "__main__":
+    grid = [["1","1","0"],["1","0","0"],["0","0","1"]]
+    print(num_islands(grid))

@@ -20,3 +20,6 @@ def can_finish(num_courses, prerequisites):
             if indegree[neighbor] == 0:
                 queue.append(neighbor)
     return taken == num_courses
+
+if __name__ == "__main__":
+    print(can_finish(2, [[1,0]]))
