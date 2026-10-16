@@ -18,7 +18,7 @@ Return the kth smallest element in a BST.
 ## 3. Examples
 
 ```text
-See solution file.
+1
 ```
 
 ## 4. Hints

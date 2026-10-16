@@ -1,5 +1,4 @@
-"""Solution for 'Kth Smallest Element In A Bst'.
-#Kth Smallest Element in a BST. O(n) time, O(h) space."""
+"""Solution: Kth Smallest Element in a BST. O(n) time, O(h) space."""
 
 
 class TreeNode:
@@ -21,3 +20,7 @@ def kth_smallest(root, k):
 
     inorder(root)
     return result[k - 1]
+
+if __name__ == "__main__":
+    root = TreeNode(3, TreeNode(1, None, TreeNode(2)), TreeNode(4))
+    print(kth_smallest(root, 1))

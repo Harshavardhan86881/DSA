@@ -20,3 +20,7 @@ def kth_smallest(root, k):
 
     inorder(root)
     return result[k - 1]
+
+if __name__ == "__main__":
+    root = TreeNode(3, TreeNode(1, None, TreeNode(2)), TreeNode(4))
+    print(kth_smallest(root, 1))

@@ -26,3 +26,7 @@ def level_order(root):
                 queue.append(node.right)
         result.append(level)
     return result
+
+if __name__ == "__main__":
+    root = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
+    print(level_order(root))

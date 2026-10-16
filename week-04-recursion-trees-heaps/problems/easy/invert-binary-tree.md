@@ -18,7 +18,7 @@ Invert a binary tree.
 ## 3. Examples
 
 ```text
-See solution file.
+4 7 2
 ```
 
 ## 4. Hints

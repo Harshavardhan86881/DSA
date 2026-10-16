@@ -14,3 +14,8 @@ def is_same_tree(p, q):
     if p.val != q.val:
         return False
     return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+
+if __name__ == "__main__":
+    p = TreeNode(1, TreeNode(2), TreeNode(3))
+    q = TreeNode(1, TreeNode(2), TreeNode(3))
+    print(is_same_tree(p, q))

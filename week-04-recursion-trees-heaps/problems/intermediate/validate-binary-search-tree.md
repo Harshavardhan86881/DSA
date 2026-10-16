@@ -18,7 +18,7 @@ Determine if a binary tree is a valid BST.
 ## 3. Examples
 
 ```text
-See solution file.
+True
 ```
 
 ## 4. Hints

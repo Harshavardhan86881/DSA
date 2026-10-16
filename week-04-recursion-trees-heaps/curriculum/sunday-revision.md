@@ -1,3 +1,3 @@
 # Sunday — Week 4 Revision and Assessment
 
-Complete assessments/week-4-assessment.md.
+Complete `assessments/week-4-assessment.md` and self-grade with `assessments/answer-key.md`.
