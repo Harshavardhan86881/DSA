@@ -9,15 +9,15 @@
 
 ## 1. Problem statement
 
-Given an array `nums` of distinct integers, return all possible permutations. You may return them in any order.
+Given an array `nums`, return all permutations of its positions. You may return them in any order. If values repeat, this position-based version may return duplicate value-arrangements; the unique-permutation follow-up asks you to remove those duplicates.
 
 Function contract: `permute(nums: list[int]) -> list[list[int]]`.
 
 ## 2. Constraints
 
-- `1 <= len(nums) <= 6`
+- `0 <= len(nums) <= 6`
 - `-10 <= nums[i] <= 10`
-- Values may repeat; this implementation treats positions, so duplicate values can produce duplicate permutations.
+- Values may repeat; this implementation treats positions separately, so duplicate values can produce duplicate value-arrangements.
 
 ## 3. Examples
 
@@ -64,8 +64,8 @@ Important code lines:
 ## 8. Edge cases and tests
 
 - Single element.
-- Empty input returns `[[]]` under this implementation? Actually empty input returns `[[]]`.
-- Duplicate values may produce duplicate permutations.
+- Empty input returns `[[]]`, representing the single permutation of zero elements.
+- Duplicate values may produce duplicate value-arrangements because indices, not values, are marked as used.
 
 ## 9. Common mistakes
 
