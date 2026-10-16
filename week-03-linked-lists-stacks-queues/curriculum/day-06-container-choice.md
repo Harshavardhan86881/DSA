@@ -4,11 +4,11 @@
 | --- | --- |
 | **Week** | 3 |
 | **Theme** | Container choice |
-| **Estimated time** | 4 hours |
+| **Estimated time** | 4 hours (40 + 35 + 45 + 70 + 25 + 25) |
 | **Prerequisites** | Days 1–5 |
 | **Deliverable** | Mixed practice |
 
-## 1. Objectives
+## 1. Day objectives
 
 1. Choose list, deque, stack, queue.
 2. State operation costs.
@@ -18,10 +18,12 @@
 
 | Block | Time | Task |
 | --- | --- | --- |
-| Concepts | 45 min | Review all structures. |
-| Worked examples | 35 min | Compare operations. |
-| Problem solving | 90 min | Mixed set. |
-| Active recall | 30 min | Flashcards. |
+| Intuition and theory | 40 min | Read `lessons/choosing-a-container/choosing-a-container.md`. |
+| Diagrams and dry runs | 35 min | Compare operation costs. |
+| Guided implementation | 45 min | Re-type one solution from each topic. |
+| Independent problem solving | 70 min | Mixed set from Week 3 problems. |
+| Tests and debugging | 25 min | Run all Week 3 tests. |
+| Active recall and spoken explanation | 25 min | Flashcards and one spoken solution. |
 
 ## 3. Exit criteria
 
