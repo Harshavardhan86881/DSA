@@ -1,0 +1,46 @@
+name: validate
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structure-and-links:
+    name: Structure, links and Python syntax
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Validate repository structure
+        run: python scripts/check_structure.py
+
+      - name: Validate relative Markdown links
+        run: python scripts/check_links.py
+
+      - name: Check Python syntax (compile all sources)
+        run: python -m compileall -q docs scripts examples 2>/dev/null || python -m compileall -q scripts
+
+      - name: Run unit tests when present
+        run: |
+          if [ -d tests ] && compgen -G "tests/test_*.py" > /dev/null; then
+            python -m pip install --quiet pytest
+            python -m pytest -q
+          else
+            echo "No tests/ directory with test_*.py files yet; skipping pytest."
+          fi

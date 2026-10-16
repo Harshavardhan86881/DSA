@@ -1,0 +1,68 @@
+# ---- Python bytecode and caches ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ---- Packaging / build output ----
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---- Test / coverage / type-checker caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.hypothesis/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+.python-version.local
+
+# ---- Editors and IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.jupyter/
+.ipynb_checkpoints/
+
+# ---- Operating system noise ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Local secrets: never commit these ----
+.env
+.env.*
+*.env
+secrets/
+*.pem
+*.key
+credentials.json
+token.json
+config.local.json
+
+# ---- Temporary and scratch output ----
+tmp/
+temp/
+*.tmp
+*.bak
+*.log
+scratch/
+sandbox/
