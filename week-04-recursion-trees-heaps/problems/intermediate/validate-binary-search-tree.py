@@ -1,5 +1,4 @@
-"""Solution for 'Validate Binary Search Tree'.
-#Validate Binary Search Tree. O(n) time, O(h) space."""
+"""Solution: Validate Binary Search Tree. O(n) time, O(h) space."""
 
 
 class TreeNode:
@@ -17,3 +16,7 @@ def is_valid_bst(root):
             return False
         return helper(node.left, low, node.val) and helper(node.right, node.val, high)
     return helper(root, float("-inf"), float("inf"))
+
+if __name__ == "__main__":
+    root = TreeNode(2, TreeNode(1), TreeNode(3))
+    print(is_valid_bst(root))

@@ -13,3 +13,8 @@ def invert_tree(root):
         return None
     root.left, root.right = invert_tree(root.right), invert_tree(root.left)
     return root
+
+if __name__ == "__main__":
+    root = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(7))
+    inv = invert_tree(root)
+    print(inv.val, inv.left.val, inv.right.val)

@@ -18,7 +18,7 @@ Check if two binary trees are the same.
 ## 3. Examples
 
 ```text
-See solution file.
+True
 ```
 
 ## 4. Hints

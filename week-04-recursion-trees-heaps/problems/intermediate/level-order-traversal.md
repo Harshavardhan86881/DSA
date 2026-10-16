@@ -18,7 +18,7 @@ Return level order traversal of a binary tree.
 ## 3. Examples
 
 ```text
-See solution file.
+[[3], [9, 20], [15, 7]]
 ```
 
 ## 4. Hints

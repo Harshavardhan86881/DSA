@@ -13,3 +13,6 @@ Concepts:
 1. Base case and recursive case.
 2. Traversal orders.
 3. Heap operations complexity.
+4. BST validation.
+
+Rubric: pass at 70%.

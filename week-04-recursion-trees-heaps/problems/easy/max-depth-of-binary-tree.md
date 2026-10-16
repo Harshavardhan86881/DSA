@@ -18,7 +18,7 @@ Given root of binary tree, return its maximum depth.
 ## 3. Examples
 
 ```text
-See solution file.
+3
 ```
 
 ## 4. Hints

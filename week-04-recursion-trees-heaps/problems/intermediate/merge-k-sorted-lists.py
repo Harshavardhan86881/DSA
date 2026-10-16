@@ -1,5 +1,4 @@
-"""Solution for 'Merge K Sorted Lists'.
-#Merge k Sorted Lists. O(n log k) time, O(k) space."""
+"""Solution: Merge k Sorted Lists. O(n log k) time, O(k) space."""
 
 
 import heapq
@@ -25,3 +24,12 @@ def merge_k_lists(lists):
         if node.next is not None:
             heapq.heappush(heap, (node.next.val, i, node.next))
     return dummy.next
+
+if __name__ == "__main__":
+    lists = [ListNode(1, ListNode(4, ListNode(5))), ListNode(1, ListNode(3, ListNode(4))), ListNode(2, ListNode(6))]
+    head = merge_k_lists(lists)
+    out = []
+    while head:
+        out.append(head.val)
+        head = head.next
+    print(out)
