@@ -11,3 +11,9 @@ def test_none():
 
 def test_zero():
     assert coin_change([1,2,5], 0) == 0
+
+def test_duplicates():
+    assert coin_change([1,1,2], 4) == 2
+
+def test_greedy_counterexample_system():
+    assert coin_change([1,3,4], 6) == 2

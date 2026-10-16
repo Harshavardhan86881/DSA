@@ -9,55 +9,77 @@
 
 ## 1. Problem statement
 
-Max number of non-overlapping activities.
+Given a list of activities as `(start, end)` intervals, return the maximum number of activities that can be selected without overlapping. An activity ending at time `t` can be followed by an activity starting at time `t`.
+
+Function contract: `max_activities(intervals: list[tuple[int, int]]) -> int`.
 
 ## 2. Constraints
 
-Reasonable input sizes.
+- `0 <= len(intervals) <= 10^5`
+- `0 <= start <= end <= 10^9`
+- Intervals may be unsorted.
 
 ## 3. Examples
 
-```text
-See solution file.
-```
+Input: `[(1,3),(2,4),(3,5),(0,6),(5,7),(8,9)]`
+Output: `4`
+Explanation: choose `(1,3)`, `(3,5)`, `(5,7)`, `(8,9)`.
+
+Input: `[]`
+Output: `0`.
 
 ## 4. Hints
 
 <details><summary>Hint 1</summary>
-Use recursion/DP as appropriate.
+Sort by finish time.
 </details>
 
-## 5. Optimised approach
+<details><summary>Hint 2</summary>
+Keep the last selected finish time and accept an interval when its start is at least that time.
+</details>
 
-```python
-"""Solution: Activity Selection. O(n log n) time, O(1) extra space."""
+## 5. Brute-force approach
 
+Try all subsets of activities and check non-overlap. This is exponential and only useful for tiny inputs.
 
-def max_activities(intervals):
-    intervals_sorted = sorted(intervals, key=lambda x: x[1])
-    count = 0
-    last_end = float("-inf")
-    for start, end in intervals_sorted:
-        if start >= last_end:
-            count += 1
-            last_end = end
-    return count
-```
+## 6. Optimised approach
 
-## 6. Complexity analysis
+Sort by finish time. Greedily select the earliest-finishing compatible activity. Use an exchange argument to justify safety.
 
-See solution docstring.
+Important code lines:
 
-## 7. Edge cases and tests
+- `sorted(intervals, key=lambda interval: interval[1])`: sort by finish time.
+- `if start >= last_end`: compatibility check.
+- `last_end = end`: commit to selected activity.
 
-See `../../exercises/test-cases/`.
+## 7. Complexity analysis
 
-## 8. Follow-up questions
+- Time: O(n log n).
+- Auxiliary space: O(1) if sorting in place, otherwise O(n).
 
-1. Can you reduce space?
-2. What is the time complexity?
-3. How to handle duplicates?
+## 8. Edge cases and tests
 
-## 9. Related problems
+- Empty input.
+- One activity.
+- Equal start/end times.
+- Nested intervals.
+- Back-to-back activities.
+
+## 9. Common mistakes
+
+- Sorting by start time or duration.
+- Using `>` instead of `>=`.
+- Assuming greedy works without a counterexample test.
+
+## 10. Follow-up questions
+
+1. How would you return the selected intervals, not just the count?
+2. What is a greedy counterexample?
+3. When is DP more appropriate?
+
+## 11. Related problems
 
 - `../../exercises/starter-code/activity_selection.py` — starter code.
+- `../../exercises/solutions/activity_selection.py` — solution.
+- `../../exercises/test-cases/test_activity_selection.py` — tests.
+- `../../lessons/greedy/greedy.md` — lesson.

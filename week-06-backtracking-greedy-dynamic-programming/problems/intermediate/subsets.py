@@ -1,4 +1,7 @@
-"""Solution: Subsets. O(n * 2^n) time, O(n) space (excluding output)."""
+"""Solution: Subsets. O(n * 2^n) time, O(n) auxiliary space.
+
+Position-based subsets: duplicate input values may produce duplicate subsets.
+"""
 
 
 def subsets(nums):
@@ -13,3 +16,7 @@ def subsets(nums):
 
     backtrack(0, [])
     return result
+
+
+if __name__ == "__main__":
+    print(subsets([1, 2, 3]))

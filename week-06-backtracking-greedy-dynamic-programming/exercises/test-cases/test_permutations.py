@@ -8,3 +8,12 @@ def test_basic():
 
 def test_single():
     assert permute([1]) == [[1]]
+
+def test_empty():
+    assert permute([]) == [[]]
+
+def test_count():
+    assert len(permute([1,2,3,4])) == 24
+
+def test_duplicates_position_based():
+    assert len(permute([1,1])) == 2

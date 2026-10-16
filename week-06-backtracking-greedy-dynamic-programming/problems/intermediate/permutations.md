@@ -9,64 +9,79 @@
 
 ## 1. Problem statement
 
-Return all permutations.
+Given an array `nums` of distinct integers, return all possible permutations. You may return them in any order.
+
+Function contract: `permute(nums: list[int]) -> list[list[int]]`.
 
 ## 2. Constraints
 
-Reasonable input sizes.
+- `1 <= len(nums) <= 6`
+- `-10 <= nums[i] <= 10`
+- Values may repeat; this implementation treats positions, so duplicate values can produce duplicate permutations.
 
 ## 3. Examples
 
-```text
-See solution file.
-```
+Input: `nums = [1,2,3]`
+Output: `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`.
+
+Input: `nums = [1]`
+Output: `[[1]]`.
 
 ## 4. Hints
 
 <details><summary>Hint 1</summary>
-Use recursion/DP as appropriate.
+At each level, choose an unused element.
 </details>
 
-## 5. Optimised approach
+<details><summary>Hint 2</summary>
+Use a boolean `used` array.
+</details>
 
-```python
-"""Solution: Permutations. O(n * n!) time, O(n) space."""
+<details><summary>Hint 3</summary>
+When the path length equals `len(nums)`, record a copy.
+</details>
 
+## 5. Brute-force approach
 
-def permute(nums):
-    result = []
+Generate all sequences of length n from n elements without tracking used elements. This creates invalid repeated elements and exponential blowup.
 
-    def backtrack(path, used):
-        if len(path) == len(nums):
-            result.append(path[:])
-            return
-        for i in range(len(nums)):
-            if used[i]:
-                continue
-            used[i] = True
-            path.append(nums[i])
-            backtrack(path, used)
-            path.pop()
-            used[i] = False
+## 6. Optimised approach
 
-    backtrack([], [False] * len(nums))
-    return result
-```
+Backtrack with a `used` array. At each level, try every unused index, mark it used, recurse, then undo.
 
-## 6. Complexity analysis
+Important code lines:
 
-See solution docstring.
+- `if len(path) == len(nums)`: base case.
+- `if used[i]: continue`: skip used elements.
+- `used[i] = True` and `used[i] = False`: choose and undo.
+- `path[:]`: snapshot.
 
-## 7. Edge cases and tests
+## 7. Complexity analysis
 
-See `../../exercises/test-cases/`.
+- Time: O(n * n!).
+- Auxiliary space: O(n), excluding output.
 
-## 8. Follow-up questions
+## 8. Edge cases and tests
 
-1. Can you reduce space?
-2. What is the time complexity?
-3. How to handle duplicates?
+- Single element.
+- Empty input returns `[[]]` under this implementation? Actually empty input returns `[[]]`.
+- Duplicate values may produce duplicate permutations.
 
-## 9. Related problems
+## 9. Common mistakes
+
+- Forgetting to unmark `used`.
+- Storing a mutable path.
+- Reusing an element.
+
+## 10. Follow-up questions
+
+1. How would you handle duplicate values uniquely?
+2. How would you generate permutations iteratively?
+3. What is the complexity for n = 10?
+
+## 11. Related problems
 
 - `../../exercises/starter-code/permutations.py` — starter code.
+- `../../exercises/solutions/permutations.py` — solution.
+- `../../exercises/test-cases/test_permutations.py` — tests.
+- `../../lessons/backtracking/backtracking.md` — lesson.

@@ -8,3 +8,12 @@ def test_basic():
 
 def test_empty():
     assert subsets([]) == [[]]
+
+def test_single():
+    assert subsets([5]) == [[], [5]]
+
+def test_count():
+    assert len(subsets([1,2,3,4])) == 16
+
+def test_duplicates_position_based():
+    assert len(subsets([1,1])) == 4
