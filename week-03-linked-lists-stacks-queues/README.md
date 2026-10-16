@@ -36,30 +36,50 @@ By the end of Week 3 you can:
 | 7 | Queues and deques | FIFO, `collections.deque`, queue-based simulations |
 | 8 | Choosing a container | Decision rule based on the operations used most often |
 
-## 4. Planned deliverables
+## 4. Current deliverables
 
-| Folder | Planned contents |
+| Folder | Contents |
 | --- | --- |
-| `lessons/` | Lessons for nodes, linked lists, reversal/cycle detection, stacks, queues, container choice |
-| `examples/` | Runnable class-based implementations with `__repr__`, traversal demos, bracket matcher, next-greater-element, queue simulation |
-| `exercises/` | Starter implementations with `NotImplementedError` bodies to complete, fixtures, and separated solutions |
-| `problems/easy/`, `problems/intermediate/` | Full problems: reverse a linked list, middle of a linked list, merge two sorted lists, cycle detection, valid brackets, min-stack-style structure, queue using stacks |
-| `interview-prep/` | Questions on pointers, memory diagrams, complexity differences, and why `pop(0)` is slow, with spoken answers and a mock interview |
-| `revision/` | Flashcards on container operations, active recall, spaced-repetition schedule |
-| `assessments/` | Daily quizzes, weekly assessment, answer key, rubric |
+| `lessons/` | Dedicated lessons for nodes, singly linked lists, iterative reversal, recursive reversal, fast/slow pointers, doubly linked lists, linked lists vs Python lists, stacks, monotonic stacks, queues, queue using two stacks, and container choice |
+| `examples/` | Runnable implementations for singly linked lists, reversal, cycle detection, brackets, monotonic stack, and queues |
+| `exercises/` | Starter code, separated solutions, and automated tests |
+| `problems/easy/`, `problems/intermediate/` | Problem statements with examples, hints, and separate solution files |
+| `interview-prep/` | Week 3 interview questions and spoken answers |
+| `revision/` | Revision guide, active recall, flashcards, and mistake log |
+| `assessments/` | Week 3 assessment and separate answer key |
+| `curriculum/` | Seven day plans, including Sunday revision and assessment |
 
 ## 5. Internal structure
 
 ```text
 week-03-linked-lists-stacks-queues/
 ├── README.md
-├── lessons/          (empty — content pending)
-├── examples/         (empty)
-├── exercises/        (empty)
-├── problems/         (empty)
-├── interview-prep/   (empty)
-├── revision/         (empty)
-└── assessments/      (empty)
+├── curriculum/
+├── lessons/
+│   ├── nodes-and-references/
+│   ├── singly-linked-lists/
+│   ├── reversing-iteratively/
+│   ├── reversing-recursively/
+│   ├── fast-slow-pointers/
+│   ├── doubly-linked-lists/
+│   ├── linked-lists-vs-python-lists/
+│   ├── stacks/
+│   ├── monotonic-stacks/
+│   ├── queues-and-deques/
+│   ├── queue-using-two-stacks/
+│   ├── choosing-a-container/
+│   └── linked-lists/
+├── examples/
+├── exercises/
+│   ├── starter-code/
+│   ├── solutions/
+│   └── test-cases/
+├── problems/
+│   ├── easy/
+│   └── intermediate/
+├── interview-prep/
+├── revision/
+└── assessments/
 ```
 
 ## 6. Exit criteria
