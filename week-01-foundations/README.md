@@ -1,6 +1,6 @@
 # Week 1 — Foundations
 
-**Status: Day 1 (problem solving) and Day 2 (Big-O) content generated; Days 3-6 and Sunday revision pending.**
+**Status: Days 1-4 content generated (problem solving, Big-O, arrays, strings); Days 5-6 and Sunday revision pending.**
 The folders below are reserved and empty on purpose. The next content-generation task fills them
 following [../templates/lesson-template.md](../templates/lesson-template.md) and
 [../templates/coding-problem-template.md](../templates/coding-problem-template.md), with the

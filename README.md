@@ -5,7 +5,7 @@ The course is organised week by week: each week has its own folder with study pl
 lessons, runnable examples, exercises, problems, revision material and assessments.
 
 **Current status:** the full 7-week structure and the shared documentation are in place.
-Week 1 Day 1 and Day 2 lesson content has been generated; Days 3-6 are pending.
+Week 1 Days 1-4 lesson content has been generated; Days 5-6 are pending.
 Weeks 2–7 are scoped and reserved but intentionally empty.
 
 ## Who this course is for
@@ -41,7 +41,7 @@ Keep a mistake notebook from day 1 — the template is at
 
 | Week | Folder | Focus | Status |
 | --- | --- | --- | --- |
-| 1 | [week-01-foundations](week-01-foundations/README.md) | Problem solving, Big-O, arrays, strings, hashing, prefix sums | Days 1-2 content generated; Days 3-6 pending |
+| 1 | [week-01-foundations](week-01-foundations/README.md) | Problem solving, Big-O, arrays, strings, hashing, prefix sums | Days 1-4 content generated; Days 5-6 pending |
 | 2 | [week-02-two-pointers-sliding-window-binary-search](week-02-two-pointers-sliding-window-binary-search/README.md) | Two pointers, sliding window, binary search, sorting patterns | Scoped, lessons not generated |
 | 3 | [week-03-linked-lists-stacks-queues](week-03-linked-lists-stacks-queues/README.md) | Linked lists, stacks, queues and their applications | Scoped, lessons not generated |
 | 4 | [week-04-recursion-trees-heaps](week-04-recursion-trees-heaps/README.md) | Recursion, trees, binary search trees, heaps | Scoped, lessons not generated |
