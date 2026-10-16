@@ -17,7 +17,9 @@ Reasonable graph sizes.
 
 ## 3. Examples
 
+```text
 See solution file.
+```
 
 ## 4. Hints
 

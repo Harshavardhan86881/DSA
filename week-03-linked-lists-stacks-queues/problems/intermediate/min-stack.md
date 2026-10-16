@@ -18,16 +18,8 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 
 ## 3. Examples
 
-**Example 1**
-
 ```text
-push(-2), push(0), push(-3), getMin() -> -3, pop(), top() -> 0, getMin() -> -2
-```
-
-**Example 2 — edge case**
-
-```text
-Single element stack.
+See solution file.
 ```
 
 ## 4. Hints

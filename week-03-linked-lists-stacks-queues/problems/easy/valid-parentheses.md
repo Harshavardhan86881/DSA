@@ -17,18 +17,8 @@ Given a string containing only `()[]{}`, determine if it is valid. Open brackets
 
 ## 3. Examples
 
-**Example 1**
-
 ```text
-Input: "()[]{}"
-Output: True
-```
-
-**Example 2 — edge case**
-
-```text
-Input: ""
-Output: True
+See solution file.
 ```
 
 ## 4. Hints

@@ -1,6 +1,7 @@
 # Week 4 Interview Questions
 
-Q: What is a base case? A: The stopping condition.
-Q: Recursion vs iteration? A: Recursion uses call stack; iteration uses explicit stack/loop.
-Q: BST worst case? A: O(n) if skewed.
-Q: Heap use? A: Top-k, priority queue.
+Q: What is a base case? A: Stopping condition.
+Q: Recursion vs iteration? A: Call stack vs explicit loop.
+Q: BST worst case? A: O(n) skewed.
+Q: Heap use? A: Priority queue, top-k.
+Q: Traversal for BST sorted output? A: Inorder.

@@ -17,18 +17,8 @@ Given a linked list, determine if it has a cycle.
 
 ## 3. Examples
 
-**Example 1**
-
 ```text
-Input: 3 -> 2 -> 0 -> -4 -> (back to 2)
-Output: True
-```
-
-**Example 2 — edge case**
-
-```text
-Input: 1
-Output: False
+See solution file.
 ```
 
 ## 4. Hints

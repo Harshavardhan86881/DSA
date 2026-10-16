@@ -21,17 +21,17 @@ After this lesson you can:
 ## 2. Prerequisites check
 
 1. Can you use Python classes? (If no, review classes.)
-2. Do you understand references/pointers? (If no, read section 3.)
+2. Do you understand references? (If no, read section 3.)
 
 ## 3. Why this matters
 
-Linked lists appear in interviews for pointer manipulation and as building blocks for stacks, queues, and graphs. They test careful reference updates.
+Linked lists test pointer manipulation. They appear in stacks, queues, graphs, and interview questions about references.
 
 ## 4. Concept explanation
 
 ### 4.1 Node and reference
 
-A node stores a value and a reference to the next node. The list is reached through its head.
+A node stores a value and a reference to the next node. The list is reached through its head. An empty list has `head = None`.
 
 ### 4.2 Singly linked list operations
 
@@ -85,7 +85,7 @@ def has_cycle(head):
 
 Reverse `1 -> 2 -> 3`:
 
-| Step | prev | current | nxt | list so far |
+| Step | prev | current | nxt | Resulting links |
 | --- | --- | --- | --- | --- |
 | 0 | None | 1 | 2 | 1->2->3 |
 | 1 | 1 | 2 | 3 | 1<-2->3 |
@@ -97,7 +97,8 @@ Reverse `1 -> 2 -> 3`:
 | Operation | Time | Space |
 | --- | --- | --- |
 | Traverse | O(n) | O(1) |
-| Reverse | O(n) | O(1) iterative, O(n) recursive |
+| Reverse iterative | O(n) | O(1) |
+| Reverse recursive | O(n) | O(n) |
 | Cycle detection | O(n) | O(1) |
 
 ## 8. Common mistakes
