@@ -42,7 +42,7 @@ Keep a mistake notebook from day 1 — the template is at
 | Week | Folder | Focus | Status |
 | --- | --- | --- | --- |
 | 1 | [week-01-foundations](week-01-foundations/README.md) | Problem solving, Big-O, arrays, strings, hashing, prefix sums | Complete (all 7 days) |
-| 2 | [week-02-two-pointers-sliding-window-binary-search](week-02-two-pointers-sliding-window-binary-search/README.md) | Two pointers, sliding window, binary search, sorting patterns | Days 1-4 content generated; Days 5-7 pending |
+| 2 | [week-02-two-pointers-sliding-window-binary-search](week-02-two-pointers-sliding-window-binary-search/README.md) | Two pointers, sliding window, binary search, sorting patterns | Complete (all 7 days) |
 | 3 | [week-03-linked-lists-stacks-queues](week-03-linked-lists-stacks-queues/README.md) | Linked lists, stacks, queues and their applications | Scoped, lessons not generated |
 | 4 | [week-04-recursion-trees-heaps](week-04-recursion-trees-heaps/README.md) | Recursion, trees, binary search trees, heaps | Scoped, lessons not generated |
 | 5 | [week-05-graphs](week-05-graphs/README.md) | Graph representation, BFS, DFS, basic graph problems | Scoped, lessons not generated |
