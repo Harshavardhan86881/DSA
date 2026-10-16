@@ -1,3 +1,3 @@
 # Sunday — Week 3 Revision and Assessment
 
-Complete assessment in assessments/.
+Complete `assessments/week-3-assessment.md` and self-grade.

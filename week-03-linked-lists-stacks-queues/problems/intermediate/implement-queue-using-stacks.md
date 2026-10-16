@@ -17,16 +17,8 @@ Implement a FIFO queue using only two stacks.
 
 ## 3. Examples
 
-**Example 1**
-
 ```text
-push(1), push(2), peek() -> 1, pop() -> 1, empty() -> False
-```
-
-**Example 2 — edge case**
-
-```text
-Single element.
+See solution file.
 ```
 
 ## 4. Hints

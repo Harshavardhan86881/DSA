@@ -1,5 +1,7 @@
 """Solution: Binary Tree Level Order Traversal. O(n) time, O(n) space."""
 
+from collections import deque
+
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -12,11 +14,11 @@ def level_order(root):
     if root is None:
         return []
     result = []
-    queue = [root]
+    queue = deque([root])
     while queue:
         level = []
         for _ in range(len(queue)):
-            node = queue.pop(0)
+            node = queue.popleft()
             level.append(node.val)
             if node.left:
                 queue.append(node.left)

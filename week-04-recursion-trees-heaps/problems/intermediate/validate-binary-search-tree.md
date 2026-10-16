@@ -13,11 +13,13 @@ Determine if a binary tree is a valid BST.
 
 ## 2. Constraints
 
-- Reasonable tree/list sizes.
+- Reasonable input sizes (see solution).
 
 ## 3. Examples
 
-See solution file for example.
+```text
+See solution file.
+```
 
 ## 4. Hints
 

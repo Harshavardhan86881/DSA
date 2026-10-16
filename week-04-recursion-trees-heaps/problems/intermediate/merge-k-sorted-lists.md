@@ -13,11 +13,13 @@ Merge k sorted linked lists into one sorted list.
 
 ## 2. Constraints
 
-- Reasonable tree/list sizes.
+- Reasonable input sizes (see solution).
 
 ## 3. Examples
 
-See solution file for example.
+```text
+See solution file.
+```
 
 ## 4. Hints
 

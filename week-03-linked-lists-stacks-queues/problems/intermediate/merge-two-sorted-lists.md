@@ -17,18 +17,8 @@ Merge two sorted linked lists and return the head of the merged list.
 
 ## 3. Examples
 
-**Example 1**
-
 ```text
-Input: 1->2->4, 1->3->4
-Output: 1->1->2->3->4->4
-```
-
-**Example 2 — edge case**
-
-```text
-Input: [], []
-Output: []
+See solution file.
 ```
 
 ## 4. Hints

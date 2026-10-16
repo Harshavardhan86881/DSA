@@ -18,18 +18,8 @@ Given the head of a singly linked list, reverse the list and return the new head
 
 ## 3. Examples
 
-**Example 1**
-
 ```text
-Input: 1 -> 2 -> 3 -> 4 -> 5
-Output: 5 -> 4 -> 3 -> 2 -> 1
-```
-
-**Example 2 — edge case**
-
-```text
-Input: []
-Output: []
+[3, 2, 1]
 ```
 
 ## 4. Hints

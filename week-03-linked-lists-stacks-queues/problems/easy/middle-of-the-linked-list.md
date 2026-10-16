@@ -18,18 +18,8 @@ Given the head of a singly linked list, return the middle node. If there are two
 
 ## 3. Examples
 
-**Example 1**
-
 ```text
-Input: 1 -> 2 -> 3 -> 4 -> 5
-Output: node with value 3
-```
-
-**Example 2 — edge case**
-
-```text
-Input: 1 -> 2 -> 3 -> 4
-Output: node with value 3
+See solution file.
 ```
 
 ## 4. Hints
