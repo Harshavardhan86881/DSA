@@ -109,3 +109,11 @@ solutions, original explanations, verified links only, and no duplicate document
 2. Generate the complete Week 1 content (lessons, examples, exercises, problems, interview
    preparation, revision, assessments) into the folders already reserved for it.
 3. Repeat the same pattern for Weeks 2–7, one week at a time.
+
+## Interactive learning dashboard
+
+The static React + Vite workspace lives separately in [`web/`](web/README.md).
+It discovers the original week content at build time and adds lesson reading,
+search, local progress, practice statuses, study plans and revision reminders.
+See the website guide for local commands, browser-local data limitations and
+GitHub Pages setup. The course files remain the source of truth.
