@@ -1,0 +1,6 @@
+node_modules/
+dist/
+src/content/manifest.json
+public/course/
+playwright-report/
+test-results/
