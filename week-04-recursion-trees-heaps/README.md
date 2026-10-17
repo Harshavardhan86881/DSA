@@ -1,6 +1,6 @@
 # Week 4 — Recursion, trees, heaps
 
-**Status: structure ready; lesson content NOT generated.**
+**Status: deep teaching content generated for all required Week 4 topics.**
 Scope is fixed here; lessons are generated week by week after Week 1 is complete.
 
 ## 1. Learning objectives
@@ -37,30 +37,39 @@ By the end of Week 4 you can:
 | 7 | Heaps | Complete-tree shape, `heapq`, heaps as priority queues, top-k problems |
 | 8 | Structure choice | When a tree or heap is the right answer instead of a dict or a sorted list |
 
-## 4. Planned deliverables
+## 4. Current deliverables
 
-| Folder | Planned contents |
+| Folder | Contents |
 | --- | --- |
-| `lessons/` | Recursion fundamentals, recursion patterns, trees and traversals, BST operations, heaps and priority queues |
-| `examples/` | Runnable recursion demos with printed call order, tree class with traversals, heap-based top-k demo |
-| `exercises/` | Write recursion from a description; complete tree traversal functions; heap builder; fixtures and separated solutions |
-| `problems/easy/`, `problems/intermediate/` | Full problems: maximum depth of a binary tree, same-tree comparison, invert a binary tree, level-order traversal, validate a BST, kth largest element, merge-k-sorted-lists style heap problem |
-| `interview-prep/` | Questions on base cases, stack overflow, recursion vs iteration, tree height bounds, heap vs sort, with spoken answers and a mock interview |
-| `revision/` | Flashcards on traversal orders and complexity, active recall, spaced-repetition schedule |
-| `assessments/` | Daily quizzes, weekly assessment, answer key, rubric |
+| `lessons/` | Recursion, recursion patterns, binary trees, binary search trees, and heaps |
+| `examples/` | Runnable recursion, traversal, and heap demos |
+| `exercises/` | Starter code, separated solutions, and automated tests |
+| `problems/easy/`, `problems/intermediate/` | Problem statements with examples, hints, and separate solution files |
+| `interview-prep/` | Week 4 interview questions and spoken answers |
+| `revision/` | Revision guide, active recall, flashcards, and mistake log |
+| `assessments/` | Week 4 assessment and separate answer key |
+| `curriculum/` | Seven day plans, including Sunday revision and assessment |
 
 ## 5. Internal structure
 
 ```text
 week-04-recursion-trees-heaps/
 ├── README.md
-├── lessons/          (empty — content pending)
-├── examples/         (empty)
-├── exercises/        (empty)
-├── problems/         (empty)
-├── interview-prep/   (empty)
-├── revision/         (empty)
-└── assessments/      (empty)
+├── curriculum/
+├── lessons/
+│   ├── recursion/
+│   └── trees/
+├── examples/
+├── exercises/
+│   ├── starter-code/
+│   ├── solutions/
+│   └── test-cases/
+├── problems/
+│   ├── easy/
+│   └── intermediate/
+├── interview-prep/
+├── revision/
+└── assessments/
 ```
 
 ## 6. Exit criteria

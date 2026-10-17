@@ -1,6 +1,6 @@
 # Week 1 — Foundations
 
-**Status: structure ready; lesson content NOT generated yet.**
+**Status: all 7 days generated (Days 1-6 lessons plus Sunday revision and assessment). Week 1 content complete.**
 The folders below are reserved and empty on purpose. The next content-generation task fills them
 following [../templates/lesson-template.md](../templates/lesson-template.md) and
 [../templates/coding-problem-template.md](../templates/coding-problem-template.md), with the

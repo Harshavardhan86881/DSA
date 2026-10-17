@@ -1,7 +1,6 @@
 # Week 5 — Graphs
 
-**Status: structure ready; lesson content NOT generated.**
-Scope is fixed here; lessons are generated week by week after Week 1 is complete.
+**Status: deep teaching content complete for all required Week 5 topics.**
 
 ## 1. Learning objectives
 
@@ -55,14 +54,29 @@ By the end of Week 5 you can:
 ```text
 week-05-graphs/
 ├── README.md
-├── lessons/          (empty — content pending)
-├── examples/         (empty)
-├── exercises/        (empty)
-├── problems/         (empty)
-├── interview-prep/   (empty)
-├── revision/         (empty)
-└── assessments/      (empty)
+├── lessons/
+├── examples/
+├── exercises/
+├── problems/
+├── interview-prep/
+├── revision/
+└── assessments/
 ```
+
+## 5.5 Actual files
+
+| Area | Files |
+| --- | --- |
+| Lesson | [lessons/graphs/graphs.md](lessons/graphs/graphs.md) |
+| Examples | [examples/graphs/bfs.py](examples/graphs/bfs.py), [examples/graphs/dfs.py](examples/graphs/dfs.py), [examples/graphs/topological_sort.py](examples/graphs/topological_sort.py) |
+| Starter code | [exercises/starter-code/has_path.py](exercises/starter-code/has_path.py), [exercises/starter-code/shortest_path_unweighted.py](exercises/starter-code/shortest_path_unweighted.py), [exercises/starter-code/number_of_islands.py](exercises/starter-code/number_of_islands.py), [exercises/starter-code/connected_components.py](exercises/starter-code/connected_components.py), [exercises/starter-code/topological_sort.py](exercises/starter-code/topological_sort.py), [exercises/starter-code/course_schedule.py](exercises/starter-code/course_schedule.py) |
+| Solutions | [exercises/solutions/](exercises/solutions/) |
+| Tests | [exercises/test-cases/](exercises/test-cases/) |
+| Problems | [problems/easy/](problems/easy/), [problems/intermediate/](problems/intermediate/) |
+| Day plans | [curriculum/](curriculum/) |
+| Interview prep | [interview-prep/questions.md](interview-prep/questions.md) |
+| Revision | [revision/](revision/) |
+| Assessment | [assessments/week-5-assessment.md](assessments/week-5-assessment.md), [assessments/answer-key.md](assessments/answer-key.md) |
 
 ## 6. Exit criteria
 
